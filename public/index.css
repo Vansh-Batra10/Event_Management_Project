@@ -1,0 +1,56 @@
+.navbar{
+ 
+display: flex;
+justify-content: space-between;
+position: absolute;
+width: 100%;
+height: 3.875em;
+left: 0em;
+top: 0em;
+
+align-items: center;
+background: rgba(153, 221, 204);
+
+}
+.nav-links{
+ 
+margin-right: 2em;
+font-family: 'Brush Script MT';
+font-style: italic;
+text-decoration-line: underline;
+font-weight: 400;
+font-size:  1.625em;
+color: #081C15;
+
+}
+
+.navheading{
+  padding-right: 6em;
+  left: 0em;
+  font-family: 'Brush Script MT';
+  font-style: italic;
+  font-weight: 400;
+  font-size:  2.625em;
+  color: #081C15;
+}
+
+.img{
+  padding-left: 2em;
+  padding-right: 2em;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.title{
+  display: flex;
+  align-items: center;
+}
+.homebody{
+  position: fixed;
+  background-color: rgba(202, 240, 248, 0.70);
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+ 
+}
