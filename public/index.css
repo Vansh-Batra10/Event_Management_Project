@@ -1,5 +1,11 @@
+h1{
+  font-family: 'Brush Script MT';
+  font-style: italic;
+  font-weight: 400;
+  font-size:  2.625em;
+  color: #081C15;
+}
 .navbar{
- 
 display: flex;
 justify-content: space-between;
 position: absolute;
@@ -7,13 +13,10 @@ width: 100%;
 height: 3.875em;
 left: 0em;
 top: 0em;
-
 align-items: center;
 background: rgba(153, 221, 204);
-
 }
 .nav-links{
- 
 margin-right: 2em;
 font-family: 'Brush Script MT';
 font-style: italic;
@@ -21,9 +24,7 @@ text-decoration-line: underline;
 font-weight: 400;
 font-size:  1.625em;
 color: #081C15;
-
 }
-
 .navheading{
   padding-right: 6em;
   left: 0em;
@@ -52,5 +53,117 @@ color: #081C15;
   left: 0;
   bottom:0;
   right:0;
+  overflow-y: scroll;
  
+}
+.homeimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+}
+.carousel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.carouselimage{
+  width: 70%;
+  padding: 5em;
+ 
+}
+.features{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.featurebtn{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 15em;
+height: 3em;
+background: #E44E73;
+border-radius: 25px;
+margin: 30px;
+}
+.featurehdg{
+  margin-top: 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.arrow {
+
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+    margin-left: 5%;
+}
+.buttonsection{
+  margin-right: 30em;
+}
+.whatwedo h1{
+  
+  text-align: center;
+}
+.whatwedo p{
+  font-family: 'Brush Script MT';
+  font-style: italic;
+  font-size:  1.225em;
+  color: #081C15;
+
+}
+.featureimg img{
+  
+  width: 35em;
+  
+}
+.bottom{
+width: 90%;
+height: 945px;
+margin: auto;
+
+background: linear-gradient(180deg, #FFE8E8 0%, rgba(217, 217, 217, 0) 100%);
+border-radius: 60px;
+}
+.bottom p{
+  text-align: center;
+  font-family: 'Brush Script MT';
+  font-style: italic;
+  font-size:  2.225em;
+  color: #081C15;
+}
+.registerbtn{
+margin: auto;
+
+width: 317px;
+height: 82px;
+text-align: center;
+background: #FF6D00;
+border-radius: 50px;
+}
+.registerbtn h1{
+  vertical-align: middle;
+  line-height: 82px;
+}
+.reviews{
+width: 300px;
+height: 350px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2%;
+background: #D9D9D9;
+border-radius: 60px;
+
+}
+.review{
+text-align: center;
 }
