@@ -98,7 +98,6 @@ margin: 30px;
 
 }
 .arrow {
-
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -122,15 +121,12 @@ margin: 30px;
 
 }
 .featureimg img{
-  
   width: 35em;
-  
 }
 .bottom{
 width: 90%;
 height: 945px;
 margin: auto;
-
 background: linear-gradient(180deg, #FFE8E8 0%, rgba(217, 217, 217, 0) 100%);
 border-radius: 60px;
 }
@@ -143,7 +139,6 @@ border-radius: 60px;
 }
 .registerbtn{
 margin: auto;
-
 width: 317px;
 height: 82px;
 text-align: center;
@@ -162,8 +157,226 @@ margin-right: auto;
 margin-top: 2%;
 background: #D9D9D9;
 border-radius: 60px;
-
 }
 .review{
 text-align: center;
+}
+.body-web{
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  position: fixed;
+background-color: #f0e3d6;
+}
+.bodyicon{
+  width: 35px;
+  /* margin: 10px; */
+  padding: 10px;
+  padding-top: 0;
+}
+.icons{
+  display: flex;
+  justify-content:flex-start;
+}
+.userprofile{
+  height: 50px;
+  width: 50px;
+  background-color: #bdafaf;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5em;
+}
+.navbody{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+.bodyheading{
+  margin-left: auto;
+  /* margin-right: 38%; */
+  margin-right: auto;
+  font-size: 22px;
+
+}
+.titlearea{
+  resize: none;
+  width: 70%;
+  height: 50px;
+  
+
+}
+.contentarea{
+  width: 70%;
+  resize: none;
+  margin-right: 20px;
+  height: 480px;
+  
+  
+}
+.firstarea{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.secondarea{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn{
+  margin-top: 10px;
+  margin-left: 50%;
+
+}
+.btn:link,
+
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.attachicon{
+  margin-top: 10px;
+  width: 40px;
+  margin-left: 25%;
+  
+}
+.hometitle{
+  margin-left: 55%;
+  margin-right: 50%;
+
+}
+.widget{
+  width: 250px;
+  height: 220px;
+  background-color: rgb(255,255,255,0.5);
+  text-align: center;
+  border-radius: 25%;
+}
+.widget:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.row1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.row2{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.two{
+  margin-right: 150px;
+  margin-left: 180px;
+  margin-bottom: 50px;
+}
+.homeimg{
+  margin-top: 20px;
+  width: 120px;
+}
+.loginhomebody{
+  overflow-y: scroll;
+  
+}
+.homepagesectiontwo h1{
+  text-align: center;
+}
+.ideasection{
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.ideasectionimg{
+  position: absolute;
+  margin-left: 30px;
+  background: #D9D9D9;
+  width: 450px;
+  height: 250px;
+background: #D9D9D9;
+border-radius: 70px;
+}
+.ideasection p{
+  position: relative;
+  margin-left: 500px;
+  margin-right: 30px;
+  text-align: justify;
+  font-size: 1.3em;
+}
+.alte p{
+  margin-left: 30px;
+  margin-right: 500px;
+}
+.altei{
+  margin-right: 30px;
+  margin-left: 1208px;
+}
+.homepagesectiontwo h4{
+  text-align: center;
+  font-size: 1.2em;
 }

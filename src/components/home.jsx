@@ -63,7 +63,7 @@ ur event plan within minutes
       </div>
       <div className='review'>
       <h1> Reviews </h1>
-        <div className='reviews'></div>
+      <div className='reviews'></div>
 
       </div>
       </div>
