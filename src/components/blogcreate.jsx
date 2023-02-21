@@ -27,7 +27,7 @@ function createblog(){
            </div>
            <div className='secondarea'>
             <h1>Content</h1>
-            <textarea className='contentarea' rows="22"></textarea>
+            <textarea className='contentarea' rows="20"></textarea>
            </div>
            
            <img src={icon4} className="attachicon"></img>
