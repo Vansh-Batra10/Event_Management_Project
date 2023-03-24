@@ -4,6 +4,7 @@ import icon2 from './hamburger-menu-icon.png';
 import icon3 from './arrow-thin-left-icon.png';
 import Card from ".//props/card.jsx";
 import data from "./data.jsx";
+import { Link } from 'react-router-dom';
 function Events(){
     return(
         <div > 
@@ -12,7 +13,7 @@ function Events(){
           
            <div className='navbody'>
            <div className='icons-events'>
-                <img src={icon1} className='bodyicon'></img>
+                <Link to="/homelogin"><img src={icon1} className='bodyicon'></img></Link>
                 <img src={icon2} className='bodyicon'></img>
                 <img src={icon3} className='bodyicon'></img>
             </div>
@@ -28,24 +29,34 @@ function Events(){
           
             
            <div className='row1'>
+           
+<Link to="/birthday" >
            <div className='rectangle'>
                 <h2>Marriage</h2>
-            </div>
+            </div> </Link>
+            <Link to="/wedding" > 
             <div className='rectangle'>
            
             </div>
+            </Link>
+            <Link to="/anniversary" >
             <div className='rectangle'>
             
             </div>
+            </Link>
            </div>
            <div className='row2'>
+           <Link to="/retirement" >
+
            <div className='rectangle two'>
            
             </div>
+            </Link>
+            <Link to="/gettogether" >
             <div className='rectangle two'>
             
             </div>
-            
+            </Link>
            </div>
            <h1 style={{textAlign:"center"}}>Some Trending Venues</h1>
            <div className='trending'>

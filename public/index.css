@@ -428,20 +428,32 @@ flex-direction: row;
   background-color: #777;
 }
 .trending{
-  margin-left:10em;
-  margin-right:10em;
+  margin-left:160px;
+  margin-right:160px;
   margin-bottom: 5em;
   display: flex;
   align-items:center ;
   justify-content: space-between;
 }
+.success{
+  display: flex;
+  width: 450px;
+  height: 623px;
+  border-radius: 50px;
+  background-color: #777;
+}
 .successblock{
-  width: 388px;
-height: 623px;
-border-radius: 50px;
-background-color: #777;
 display: flex;
+
+
 align-items:center ;
-  justify-content: space-between;
-  margin-left: 5em;
+margin-left:160px;
+  margin-right:160px;
+  margin-bottom: 5em;
+justify-content: space-between;
+}
+.widget:visited{
+
+    text-decoration: none;
+    decoration:none;
 }

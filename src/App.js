@@ -7,6 +7,10 @@ import Login from './components/login';
 import Birthday from './components/Birthday';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import Events from './components/Events';
+import Wedding from './components/Marriage';
+import Anniversary from './components/Anniversary';
+import Retirement from './components/Retirement';
+import GetTogether from './components/Get_Together';
 function App() {
   return (
     <Router>
@@ -19,6 +23,10 @@ function App() {
           <Route exact path='/blogcreate' element={< Createblog/>}></Route>
           <Route exact path='/events' element={< Events/>}></Route>
           <Route exact path='/birthday' element={< Birthday/>}></Route>
+          <Route exact path='/wedding' element={< Wedding/>}></Route>
+          <Route exact path='/anniversary' element={< Anniversary/>}></Route>
+          <Route exact path='/retirement' element={< Retirement/>}></Route>
+          <Route exact path='/gettogether' element={< GetTogether/>}></Route>
    </Routes>
   </Router>
     

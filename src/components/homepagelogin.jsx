@@ -4,6 +4,7 @@ import blog from './blogicon.png'
 import idea from './ideaicon.png'
 import complaint from './complaint-icon.png'
 import user from './userprofile.png'
+import { Link } from 'react-router-dom';
 function homepagelogin(){
     return(
         <div > 
@@ -16,10 +17,12 @@ function homepagelogin(){
             
            </div>
            <div className='row1'>
+           <Link to="/events" style={{ textDecoration: 'none' }} >
            <div className='widget'>
                 <img className='homeimg' src={event}></img>
                 <h2>Events</h2>
             </div>
+            </Link>
             <div className='widget'>
             <img className='homeimg' src={blog}></img>
                 <h2>Blog</h2>

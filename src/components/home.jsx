@@ -11,11 +11,11 @@ function Navbar() {
       <img src={img} alt='logo' className='img' ></img>
       <h2 className='navheading'>Celebrations</h2>
       </div>
-        <a href='' className='nav-links'>events</a>
+        <a href='/events' className='nav-links'>events</a>
         <a href=''  className='nav-links'>blog</a>
         <a href=''  className='nav-links'>about us</a>
         <a href=''  className='nav-links'>contact us</a>
-        <a href=''  className='nav-links'>login</a>
+        <a href='/login'  className='nav-links'>login</a>
       </div>
       <div className='carousel'>
       <img src={img} className='homeimage'></img>
