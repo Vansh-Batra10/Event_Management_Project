@@ -15,7 +15,7 @@ function Anniversary(){
            <div className='icons-events'>
            <Link to="/homelogin"><img src={icon1} className='bodyicon'></img></Link>
                 <img src={icon2} className='bodyicon'></img>
-                <Link to= "/events"><img src={icon3} className='bodyicon'></img></Link>    
+                <Link to= "/events"> <img src={icon3} className='bodyicon'></img></Link>    
             </div>
             <div className='bodyheading'>
                 <h1>Anniversaries</h1>

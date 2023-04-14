@@ -29,12 +29,14 @@ function Complaint(){
             <textarea className='contentarea' rows="22"></textarea>
            </div>
           
-           <a href="#" class="btn btn-white btn-animate">Submit</a>
-
-           </div>
-           
-           
+        
+           <div class="wrap">
+  <button class="button">Submit</button>
+</div>
         </div>
+        </div>
+
+        
     )
 }
 export default Complaint;
