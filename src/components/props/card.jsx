@@ -1,13 +1,14 @@
-import React from "react";
 
-function Card(props) {
-    return (
-        <div className="card">
-            <h1 className="cardtitle" >{props.name}</h1>
-            <div className="cardimage"> </div>
-            <div className="carddesc">{props.content}</div>
-        </div>
-      
-    );
-}
+import React from 'react';
+
+const Card = ({ title, imageSrc, message }) => {
+  return (
+    <div className="card">
+      <img src={imageSrc} alt="Card" />
+      <h3>{title}</h3>
+      <p>{message}</p>
+    </div>
+  );
+};
+
 export default Card;
