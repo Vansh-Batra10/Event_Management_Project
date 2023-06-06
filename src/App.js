@@ -12,6 +12,7 @@ import Anniversary from './components/Anniversary';
 import Retirement from './components/Retirement';
 import GetTogether from './components/Get_Together';
 import Product from './components/product';
+import ProductPage from "./components/productpage";
 function App() {
   return (
     <Router>
@@ -28,7 +29,8 @@ function App() {
           <Route exact path='/anniversary' element={< Anniversary/>}></Route>
           <Route exact path='/retirement' element={< Retirement/>}></Route>
           <Route exact path='/gettogether' element={< GetTogether/>}></Route>
-          <Route exact path='/product' element={< Product/>}></Route>
+        
+          <Route path="/product/:productId" element={<ProductPage/>} />
    </Routes>
   </Router>
     
