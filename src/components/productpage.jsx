@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { useContext } from "react";
 import { useParams,Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import icon1 from './homepage-icon.png';
 import icon2 from './hamburger-menu-icon.png';
 import icon3 from './arrow-thin-left-icon.png';
 import ImageViewer from "./prodimg";
 import MyMap from "./maps";
 import ReviewsList from './props/comment';
+import CartPage from './cart';
+import { CartContext } from "./cartcontext";
+
 const ProductPage = () => {
   const { productId } = useParams();
 
@@ -66,16 +71,46 @@ const ProductPage = () => {
     { id: "3",address:"adkjfaskfdlakjfkalsflkjaskldjfalsjfkdl", title: "Product 3",location:"",price:"200000Rs/day",capacity:"500",rating:"4.5",review:["asfjkasdlfsakldf","djljajflkajskdjflaksjdfkljasf","dlakjflsjdfk"], description: "Description 3" ,img: "https://tse3.mm.bing.net/th?id=OIP.iV9Tm-mCiWqNSy42D3hyCwHaEg&pid=Api&P=0" },
     // Add more product data as needed
   ];
+  const [addedToCart, setAddedToCart] = useState(false);
+  const [numberOfDays, setNumberOfDays] = useState(1);
+  // const [cartItems, setCartItems] = useState([]);
+  const { addToCart } = useContext(CartContext);
+  const handleAddToCart = () => {
+    // Find the selected product
+    const selectedProduct = products.find((p) => p.id === productId);
 
-  // Find the product with the matching productId
-  const product = products.find((product) => product.id === productId);
+    // Create a new cart item object
+    const newCartItem = {
+      id: selectedProduct.id,
+      title: selectedProduct.title,
+      // date: selectedProduct.date, // Assuming you have a date property for each product
+      price: selectedProduct.price,
+      quantity: numberOfDays,
+    };
+  
+    // Add the new cart item to the cart
+    // setCartItems((prevCartItems) => [...prevCartItems, newCartItem]);
+    addToCart(newCartItem);
+    // Set addedToCart flag to true
+    setAddedToCart(true);
+  };
+
+  const handleNumberOfDaysChange = (e) => {
+    setNumberOfDays(Number(e.target.value));
+  };
+
+  const product = products.find((p) => p.id === productId);
 
   if (!product) {
-    return <div>Product not found</div>;
+    return <div>Product not found.</div>;
   }
+
 
   return (
     <div>
+   
+  
+     
        <div className='body-web' style={{overflow:"scroll",overscrollBehaviorX:"none"}}>
         
           
@@ -122,7 +157,23 @@ const ProductPage = () => {
            
         </div>
         <div style={{textAlign:"center"}}>
-            <button style={{margin:"30px",backgroundColor:"#4C5270",color:"white",width:"150px",height:"50px"}}>Add to Package</button>
+        {!addedToCart ? (
+              <div>
+                <label htmlFor="numberOfDays">Number of Days:</label>
+                <input
+                  type="number"
+                  id="numberOfDays"
+                  value={numberOfDays}
+                  onChange={handleNumberOfDaysChange}
+                   className="input-number-days"
+                />
+                <button style={{margin:"30px",backgroundColor:"#4C5270",color:"white",width:"150px",height:"50px"}} onClick={handleAddToCart}>
+                  Add to Package
+                </button>
+              </div>
+            ) : (
+              <div>Added to Package!</div>
+            )}
             <button style={{margin:"30px",backgroundColor:"#4C5270",color:"white",width:"150px",height:"50px"}}>Add to Favorites</button>
         </div>
         </div>
@@ -142,7 +193,6 @@ const ProductPage = () => {
      
 
         </div>
-       
        
      
         </div>

@@ -13,8 +13,11 @@ import Retirement from './components/Retirement';
 import GetTogether from './components/Get_Together';
 import Product from './components/product';
 import ProductPage from "./components/productpage";
+import CartPage from './components/cart';
+import { CartProvider } from './components/cartcontext';
 function App() {
   return (
+    <CartProvider>
     <Router>
     
     <Routes>
@@ -29,11 +32,12 @@ function App() {
           <Route exact path='/anniversary' element={< Anniversary/>}></Route>
           <Route exact path='/retirement' element={< Retirement/>}></Route>
           <Route exact path='/gettogether' element={< GetTogether/>}></Route>
+          <Route path="/cart" element={<CartPage/>} />
         
           <Route path="/product/:productId" element={<ProductPage/>} />
    </Routes>
   </Router>
-    
+  </CartProvider>
   );
 }
 

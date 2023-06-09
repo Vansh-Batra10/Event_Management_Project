@@ -25,6 +25,7 @@ const Birthday = () => {
       <Routes>
         <Route path="/" element={<BirthdayMain />} />
         <Route path="/product/:productId" element={<ProductPage/>} />
+        
       </Routes>
     </div>
   );
