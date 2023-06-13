@@ -1,12 +1,14 @@
+import { text } from "body-parser";
 import React from "react";
 
-function Success(props) {
+function Success({title,img,content,category}) {
     return (
         <div className="success">
+        <h1 style={{textAlign:"center"}}>{title}</h1>
             <div className="successimg">
-            <h1>Hello</h1>
+                <img src={img}></img>
             </div>
-            <p>{props.content}</p>
+            <p>{content}</p>
         </div>
       
     );

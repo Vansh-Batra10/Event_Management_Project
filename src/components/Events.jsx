@@ -7,14 +7,14 @@ import data from "./data.jsx";
 import { Link } from 'react-router-dom';
 import CarouselSlider from './carouselslider';
 const cardsData = [
-    { title: 'Card 1', imageSrc: 'image1.jpg', price: '$10' },
-    { title: 'Card 2', imageSrc: 'image2.jpg', price: '$20' },
-    { title: 'Card 3', imageSrc: 'image3.jpg', price: '$30' },
-    { title: 'Card 4', imageSrc: 'image4.jpg', price: '$40' },
-    { title: 'Card 5', imageSrc: 'image5.jpg', price: '$50' },
-    { title: 'Card 6', imageSrc: 'image6.jpg', price: '$60' },
-    { title: 'Card 7', imageSrc: 'image7.jpg', price: '$70' },
-    { title: 'Card 8', imageSrc: 'image8.jpg', price: '$80' },
+    { title: 'Card 2', img: ['image2.jpg','imagex.jpg'], price: '$20' },
+    { title: 'Card 1', img: ['image1.jpg','imagex.jpg'], price: '$10' },
+    { title: 'Card 3', img: ['image3.jpg','imagex.jpg'], price: '$30' },
+    { title: 'Card 4', img: ['image4.jpg','imagex.jpg'], price: '$40' },
+    { title: 'Card 5', img: ['image5.jpg','imagex.jpg'], price: '$50' },
+    { title: 'Card 6', img: ['image6.jpg','imagex.jpg'], price: '$60' },
+    { title: 'Card 7', img: ['image7.jpg','imagex.jpg'], price: '$70' },
+    { title: 'Card 8', img: ['image8.jpg','imagex.jpg'], price: '$80' },
   ];
 function Events(){
     return(

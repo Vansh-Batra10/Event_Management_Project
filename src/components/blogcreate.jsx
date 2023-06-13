@@ -19,7 +19,6 @@ function createblog(){
             <div className='userprofile'>
 
             </div>
-
            </div>
            <div className='firstarea'>
             <h1>Title</h1>

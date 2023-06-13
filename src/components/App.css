@@ -1,0 +1,117 @@
+.result-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdWx0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60%22");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left-authority-card {
+  width: 80%;
+  height: 350px;
+  margin-top: 20px;
+  background:url("https://images.unsplash.com/photo-1656055449458-b5da9d3bb8b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fG1ldGFsaWMlMjBnb2xkZW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60%22");
+  margin-left: 3%;
+  text-align: left;
+  border-radius: 0px 70px;
+  display: flex;
+}
+#right-authority-card {
+  text-align: right;
+  margin-left: 18%;
+ 
+}
+.person {
+  flex-direction: column;
+  margin: auto 4em auto 4em;
+}
+.circle {
+  height: 12em;
+  width: 12em;
+  border-radius: 10%;
+  background-color: #98babb;
+}
+
+.card-fill {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 39px;
+  color: #000000;
+  margin: 10px;
+}
+
+#card-title {
+  font-family: "Caramel", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
+}
+#align_center {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  background-color: #e44e73;
+}
+.carousel-arrow {
+  background-color: transparent;
+  border: none;
+  color: #e44e73;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.carousel-arrow:hover {
+  color: #ff6384;
+}
+
+.carousel {
+  position: relative;
+}
+
+.prev-arrow {
+  position: absolute;
+  left: 33%;
+  transform: translateX(-50%);
+  bottom: -60px;
+}
+
+.next-arrow {
+  position: absolute;
+right: 30%;
+  transform: translateX(-50%);
+  bottom: -60px;
+}
+.content1 {
+  font-family: "Beau Rivage", cursive;
+  font-size: 3em;
+  color: #000000;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

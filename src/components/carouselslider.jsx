@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from './props/card.jsx';
 
-const CarouselSlider = ({ cards, visibleCards }) => {
+const CarouselSlider = ({ cards, visibleCards ,category,subcategory}) => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const totalSlides = Math.ceil(cards.length / visibleCards);
 
@@ -42,11 +42,12 @@ const CarouselSlider = ({ cards, visibleCards }) => {
               key={cardIndex}
               className={`slide ${isActive ? "active" : ""}`}
             >
-              <Link to={`/product/${card.id}`}>
+              <Link to={`/${category}/${subcategory}/${card.id}`}>
                 <Card
                   title={card.title}
-                  imageSrc={card.imageSrc}
+                  img={card.img[1]}
                   price={card.price}
+                  capacity={card.capacity}
                 />
               </Link>
             </div>

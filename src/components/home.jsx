@@ -123,7 +123,7 @@ const ReviewItem = ({ name, comment }) => {
             login
           </a>
         </div>
-        <div className='carousel home'>
+        <div className='carousel home' style={{marginTop:"50px"}}>
           <img src={img} className='homeimage' alt='Carousel Image' />
                   <div className='carousel-container-1'>
                   <div className='carousel'>
