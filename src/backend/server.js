@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 //connect to mongodb
-mongoose.connect("mongodb+srv://batravansh162:2r0AEX0oxgQ2JMpz@cluster0.hnplbfa.mongodb.net/Fiesta")
+mongoose.connect("mongouri")
 
 //require route
 app.use("/", require("./Routes/routemodel"));
